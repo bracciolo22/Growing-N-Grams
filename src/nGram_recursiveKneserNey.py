@@ -3,20 +3,6 @@
 #		https://lagunita.stanford.edu/c4x/Engineering/CS-224N/asset/slp4.pdf
 #		chen and goodman 2008 - an empirical study of smoothing techniques for language modelling
 
-# history (unfortunately partial because i started only on 20171101 to write it
-# 20171101		added the possibility to walk through the model. added some other utilities e.g. get trainingDataSize
-# 201711		implemented ful recursion of KN smoothing (which led to a huge cleanup)
-# 20180118		added the possibility to rely on a fullVocabualrySize across all models
-# 20180314		removed fullVocabularySize as static variable and made it object dependent
-# 20180515		checked the difference on how to deal with fullVocabualrySize, could not find much
-#				some cleanup done (removed commented code)
-# 20180525		added the possibility to rename the start and end node
-
-				
-
-# TODO
-# check that the calculations are in accordance with the papers!
-
 import pandas as pd
 from warnings import warn
 from graphviz import Digraph
